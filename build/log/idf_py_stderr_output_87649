@@ -1,0 +1,365 @@
+[0;33m--- esp-idf-monitor 1.4.0 on rfc2217://host.docker.internal:4000?ign_set_control 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015bba2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x40156099: vprintf at /builds/idf/crosstool-NG/.build/HOST-aarch64-linux-gnu/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016c0d1: esp_log_writev at /opt/esp/idf/components/log/log.c:215
+0x4008f229: esp_log_write at /opt/esp/idf/components/log/log.c:225
+0x400d7349: mqtt5_event_handler at /workspaces/main/app_main.c:175 (discriminator 1)
+0x4016a455: handler_execute at /opt/esp/idf/components/esp_event/esp_event.c:137
+0x40169eea: esp_event_loop_run at /opt/esp/idf/components/esp_event/esp_event.c:593
+0x400d7d92: esp_mqtt_dispatch_event at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d7dd5: esp_mqtt_dispatch_event_with_msgid at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d8aa4: esp_mqtt_task at /opt/esp/idf/components/mqtt/esp-mqtt/mqtt_client.c:1564
+0x40089be9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

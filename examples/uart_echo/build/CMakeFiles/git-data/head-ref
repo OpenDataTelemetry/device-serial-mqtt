@@ -1,1 +1,4 @@
-588e6e01428da87c999ba2a3fd3823b0662cdedb
+0000000000000000000000000000000000000000 8b291f004242d27192b57bb5a3d860c583e123b2 Rogério Cassares <rogeriocassares@Rogerios-MacBook-Pro.local> 1716783972 -0300	commit (initial): first commit
+8b291f004242d27192b57bb5a3d860c583e123b2 8b291f004242d27192b57bb5a3d860c583e123b2 Rogério Cassares <rogeriocassares@Rogerios-MacBook-Pro.local> 1716783972 -0300	Branch: renamed refs/heads/master to refs/heads/main
+8b291f004242d27192b57bb5a3d860c583e123b2 c2e0e0c7297ab1f38e5e5582302cbecc0fd70259 Rogério Cassares <rogeriocassares@Rogerios-MacBook-Pro.local> 1716951398 -0300	commit: refactor examples
+c2e0e0c7297ab1f38e5e5582302cbecc0fd70259 88a6fbd54c4ccfdf36bdb63226dee01e52cd01fc Rogério Cassares <rogeriocassares@Rogerios-MacBook-Pro.local> 1717127797 -0300	commit: join uart and serial, fail to compile yet

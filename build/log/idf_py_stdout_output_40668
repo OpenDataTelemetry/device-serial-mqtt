@@ -1,0 +1,910 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time May 31 2024 03:33:17[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a5c8h (173512) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=0003a5f0 vaddr=3ffb0000 size=03ccch ( 15564) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003e2c4 vaddr=40080000 size=01d54h (  7508) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1418h (660504) map[0m
+[0;32mI (403) esp_image: segment 4: paddr=000e1440 vaddr=40081d54 size=15860h ( 88160) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (461) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu start user code[0m
+[0;32mI (470) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (470) cpu_start: Application information:[0m
+[0;32mI (473) cpu_start: Project name:     mqtt50[0m
+[0;32mI (478) cpu_start: App version:      88a6fbd-dirty[0m
+[0;32mI (484) cpu_start: Compile time:     Jun  1 2024 00:40:13[0m
+[0;32mI (490) cpu_start: ELF file SHA256:  7fa0d522b...[0m
+[0;32mI (495) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (500) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (505) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (509) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (514) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (522) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (534) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (546) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (554) spi_flash: detected chip: generic[0m
+[0;32mI (557) spi_flash: flash io: dio[0m
+[0;33mW (561) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (575) main_task: Started on CPU0[0m
+[0;32mI (585) main_task: Calling app_main()[0m
+[0;32mI (585) UART TEST: [APP] Startup..[0m
+[0;32mI (585) UART TEST: [APP] Free memory: 271120 bytes[0m
+[0;32mI (585) UART TEST: [APP] IDF version: v5.2.1[0m
+[0;32mI (615) example_connect: Start example_connect.[0m
+I (625) wifi:wifi driver task: 3ffc1998, prio:23, stack:6656, core=0
+I (625) wifi:wifi firmware version: a9f5b59
+I (625) wifi:wifi certification version: v7.0
+I (625) wifi:config NVS flash: enabled
+I (625) wifi:config nano formating: disabled
+I (635) wifi:Init data frame dynamic rx buffer num: 32
+I (635) wifi:Init static rx mgmt buffer num: 5
+I (635) wifi:Init management short buffer num: 32
+I (645) wifi:Init dynamic tx buffer num: 32
+I (645) wifi:Init static rx buffer size: 1600
+I (655) wifi:Init static rx buffer num: 10
+I (655) wifi:Init dynamic rx buffer num: 32
+[0;32mI (665) wifi_init: rx ba win: 6[0m
+[0;32mI (665) wifi_init: tcpip mbox: 32[0m
+[0;32mI (665) wifi_init: udp mbox: 6[0m
+[0;32mI (675) wifi_init: tcp mbox: 6[0m
+[0;32mI (675) wifi_init: tcp tx win: 5760[0m
+[0;32mI (675) wifi_init: tcp rx win: 5760[0m
+[0;32mI (685) wifi_init: tcp mss: 1440[0m
+[0;32mI (685) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (695) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (695) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (775) wifi:mode : sta (cc:50:e3:be:f1:88)
+I (785) wifi:enable tsf
+[0;32mI (785) example_connect: Connecting to Rogério’s iPhone...[0m
+[0;32mI (785) example_connect: Waiting for IP(s)[0m
+[0;32mI (3205) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5615) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8035) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+I (10455) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (10705) wifi:state: init -> auth (b0)
+I (10705) wifi:state: auth -> assoc (0)
+I (10765) wifi:state: assoc -> run (10)
+I (20765) wifi:state: run -> init (cc00)
+I (20765) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (20765) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (23185) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+I (25605) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (25605) wifi:state: init -> auth (b0)
+I (25605) wifi:state: auth -> assoc (0)
+I (25615) wifi:state: assoc -> run (10)
+I (29305) wifi:state: run -> init (2c0)
+I (29305) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (29305) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (31725) example_connect: WiFi Connect failed 7 times, stop reconnect.[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d7d40
+file: "./main/app_main.c" line 350
+func: app_main
+expression: example_connect()
+
+abort() was called at PC 0x40089f4f on core 0
+
+
+Backtrace: 0x400818da:0x3ffba5d0 0x40089f59:0x3ffba5f0 0x400917cd:0x3ffba610 0x40089f4f:0x3ffba680 0x400d7d40:0x3ffba6b0 0x4016f36b:0x3ffba6e0 0x4008ab21:0x3ffba710
+
+
+
+
+ELF file SHA256: 7fa0d522b
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2024 03:33:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a5c8h (173512) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=0003a5f0 vaddr=3ffb0000 size=03ccch ( 15564) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003e2c4 vaddr=40080000 size=01d54h (  7508) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1418h (660504) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e1440 vaddr=40081d54 size=15860h ( 88160) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) cpu_start: Application information:[0m
+[0;32mI (474) cpu_start: Project name:     mqtt50[0m
+[0;32mI (479) cpu_start: App version:      88a6fbd-dirty[0m
+[0;32mI (484) cpu_start: Compile time:     Jun  1 2024 00:40:13[0m
+[0;32mI (490) cpu_start: ELF file SHA256:  7fa0d522b...[0m
+[0;32mI (496) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (500) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (505) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (510) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (515) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (522) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (534) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (547) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (555) spi_flash: detected chip: generic[0m
+[0;32mI (558) spi_flash: flash io: dio[0m
+[0;33mW (562) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (576) main_task: Started on CPU0[0m
+[0;32mI (586) main_task: Calling app_main()[0m
+[0;32mI (586) UART TEST: [APP] Startup..[0m
+[0;32mI (586) UART TEST: [APP] Free memory: 271120 bytes[0m
+[0;32mI (586) UART TEST: [APP] IDF version: v5.2.1[0m
+[0;32mI (616) example_connect: Start example_connect.[0m
+I (626) wifi:wifi driver task: 3ffc1998, prio:23, stack:6656, core=0
+I (626) wifi:wifi firmware version: a9f5b59
+I (626) wifi:wifi certification version: v7.0
+I (626) wifi:config NVS flash: enabled
+I (626) wifi:config nano formating: disabled
+I (636) wifi:Init data frame dynamic rx buffer num: 32
+I (636) wifi:Init static rx mgmt buffer num: 5
+I (636) wifi:Init management short buffer num: 32
+I (646) wifi:Init dynamic tx buffer num: 32
+I (646) wifi:Init static rx buffer size: 1600
+I (656) wifi:Init static rx buffer num: 10
+I (656) wifi:Init dynamic rx buffer num: 32
+[0;32mI (666) wifi_init: rx ba win: 6[0m
+[0;32mI (666) wifi_init: tcpip mbox: 32[0m
+[0;32mI (666) wifi_init: udp mbox: 6[0m
+[0;32mI (676) wifi_init: tcp mbox: 6[0m
+[0;32mI (676) wifi_init: tcp tx win: 5760[0m
+[0;32mI (676) wifi_init: tcp rx win: 5760[0m
+[0;32mI (686) wifi_init: tcp mss: 1440[0m
+[0;32mI (686) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (696) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (696) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (776) wifi:mode : sta (cc:50:e3:be:f1:88)
+I (786) wifi:enable tsf
+[0;32mI (786) example_connect: Connecting to Rogério’s iPhone...[0m
+[0;32mI (786) example_connect: Waiting for IP(s)[0m
+I (3206) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3456) wifi:state: init -> auth (b0)
+I (3466) wifi:state: auth -> assoc (0)
+I (3466) wifi:state: assoc -> run (10)
+I (3706) wifi:connected with Rogério’s iPhone, aid = 1, channel 6, BW20, bssid = 22:da:94:7a:cf:b6
+I (3706) wifi:security: WPA2-PSK, phy: bgn, rssi: -56
+I (3716) wifi:pm start, type: 1
+
+I (3716) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3966) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (5616) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:ce50:e3ff:febe:f188, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (10836) wifi:<ba-add>idx:0 (ifx:0, 22:da:94:7a:cf:b6), tid:0, ssn:2, winSize:64
+[0;32mI (16226) esp_netif_handlers: example_netif_sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (16226) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 172.20.10.7[0m
+[0;32mI (16236) example_common: Connected to example_netif_sta[0m
+[0;32mI (16236) example_common: - IPv4 address: 172.20.10.7,[0m
+[0;32mI (16246) example_common: - IPv6 address: fe80:0000:0000:0000:ce50:e3ff:febe:f188, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (16256) UART TEST: Other event id:7[0m
+[0;32mI (16266) main_task: Returned from app_main()[0m
+[0;31mE (23266) esp-tls: couldn't get hostname for :mqtt.maua.br: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (23266) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (23266) mqtt_client: Error transport connect[0m
+[0;32mI (23276) UART TEST: MQTT_EVENT_ERROR[0m
+[0;32mI (23276) UART TEST: MQTT5 return code is 0[0m
+[0;31mE (23286) UART TEST: Last error reported from esp-tls: 0x8001[0m
+[0;32mI (23286) UART TEST: Last errno string (Success)[0m
+[0;32mI (23296) UART TEST: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (28946) UART TEST: Recv str: �
+[0;32mI (29006) UART TEST: Recv str: [0m
+[0;32mI (29036) UART TEST: Recv str: UN���Z�j�%��	[0m
+[0;32mI (29056) UART TEST: Recv str: �
+[0;32mI (29086) UART TEST: Recv str: [0m
+[0;32mI (29106) UART TEST: Recv str: [0m
+[0;32mI (29136) UART TEST: Recv str: [0m
+[0;32mI (29156) UART TEST: Recv str: [0m
+[0;32mI (29186) UART TEST: Recv str: [0m
+[0;32mI (29206) UART TEST: Recv str: [0m
+[0;32mI (29236) UART TEST: Recv str: [0m
+[0;32mI (29256) UART TEST: Recv str: [0m
+[0;32mI (29296) UART TEST: Recv str: 	����B������- [0m
+[0;32mI (29316) UART TEST: Recv str: +[0m
+[0;32mI (29336) UART TEST: Recv str: [0m
+[0;32mI (29356) UART TEST: Recv str: [0m
+[0;32mI (29386) UART TEST: Recv str: �
+[0;32mI (29406) UART TEST: Recv str: [0m
+[0;32mI (29436) UART TEST: Recv str: [0m
+[0;32mI (29456) UART TEST: Recv str: [0m
+[0;32mI (29486) UART TEST: Recv str: �
+[0;32mI (29506) UART TEST: Recv str: �
+[0;32mI (29536) UART TEST: Recv str: �
+[0;32mI (29556) UART TEST: Recv str: �
+[0;32mI (29586) UART TEST: Recv str: [0m
+[0;32mI (29606) UART TEST: Recv str: [0m
+[0;32mI (29636) UART TEST: Recv str: �
+[0;32mI (29656) UART TEST: Recv str: �
+[0;32mI (29686) UART TEST: Recv str: [0m
+[0;32mI (29706) UART TEST: Recv str: [0m
+[0;32mI (29736) UART TEST: Recv str: [0m
+[0;32mI (29756) UART TEST: Recv str: [0m
+[0;32mI (29786) UART TEST: Recv str: �
+[0;32mI (29806) UART TEST: Recv str: [0m
+[0;32mI (29836) UART TEST: Recv str: [0m
+[0;32mI (29856) UART TEST: Recv str: �
+[0;32mI (29886) UART TEST: Recv str: [0m
+[0;32mI (29906) UART TEST: Recv str: [0m
+[0;32mI (29936) UART TEST: Recv str: [0m
+[0;32mI (29956) UART TEST: Recv str: �
+[0;32mI (29986) UART TEST: Recv str: ��[0m
+[0;32mI (30006) UART TEST: Recv str: [0m
+[0;32mI (30036) UART TEST: Recv str: �
+[0;32mI (30056) UART TEST: Recv str: [0m
+[0;32mI (30086) UART TEST: Recv str: �[0m
+[0;32mI (30106) UART TEST: Recv str: �
+[0;32mI (30136) UART TEST: Recv str: [0m
+[0;32mI (30156) UART TEST: Recv str: [0m
+[0;32mI (30186) UART TEST: Recv str: [0m
+[0;32mI (30206) UART TEST: Recv str: [0m
+[0;32mI (30236) UART TEST: Recv str: �
+[0;32mI (30256) UART TEST: Recv str: �
+[0;32mI (30286) UART TEST: Recv str: [0m
+[0;32mI (30306) UART TEST: Recv str: �
+[0;32mI (30336) UART TEST: Recv str: [0m
+[0;32mI (30356) UART TEST: Recv str: �
+[0;32mI (30386) UART TEST: Recv str: [0m
+[0;32mI (30406) UART TEST: Recv str: �
+[0;32mI (30436) UART TEST: Recv str: [0m
+[0;32mI (30456) UART TEST: Recv str: [0m
+[0;32mI (30486) UART TEST: Recv str: [0m
+[0;32mI (30506) UART TEST: Recv str: �
+[0;32mI (30536) UART TEST: Recv str: [0m
+[0;32mI (30556) UART TEST: Recv str: �
+[0;32mI (30576) UART TEST: Recv str: [0m
+[0;32mI (30596) UART TEST: Recv str: [0m
+[0;32mI (30616) UART TEST: Recv str: [0m
+[0;32mI (30656) UART TEST: Recv str: [0m
+[0;32mI (30676) UART TEST: Recv str: [0m
+[0;32mI (30696) UART TEST: Recv str: '[0m
+[0;32mI (30786) UART TEST: Recv str: [0m
+[0;32mI (30806) UART TEST: Recv str: �
+[0;32mI (30836) UART TEST: Recv str: ��[0m
+[0;32mI (30856) UART TEST: Recv str: [0m
+[0;32mI (30886) UART TEST: Recv str: �
+[0;32mI (30906) UART TEST: Recv str: [0m
+[0;32mI (30936) UART TEST: Recv str: �
+[0;32mI (30956) UART TEST: Recv str: �
+[0;32mI (30986) UART TEST: Recv str: [0m
+[0;32mI (31006) UART TEST: Recv str: �
+[0;32mI (31026) UART TEST: Recv str: �
+[0;32mI (31046) UART TEST: Recv str: �
+[0;32mI (31086) UART TEST: Recv str: ��[0m
+[0;32mI (31106) UART TEST: Recv str: �[0m
+[0;32mI (33386) UART TEST: Recv str: [0m
+[0;32mI (33406) UART TEST: Recv str: [0m
+[0;32mI (33436) UART TEST: Recv str: �
+[0;32mI (33456) UART TEST: Recv str: �
+[0;32mI (33486) UART TEST: Recv str: [0m
+[0;32mI (33506) UART TEST: Recv str: �
+[0;32mI (33536) UART TEST: Recv str: [0m
+[0;32mI (33556) UART TEST: Recv str: [0m
+[0;32mI (33586) UART TEST: Recv str: [0m
+[0;32mI (33606) UART TEST: Recv str: �
+[0;32mI (33646) UART TEST: Recv str: [0m
+[0;32mI (33686) UART TEST: Recv str: [0m
+[0;32mI (33706) UART TEST: Recv str: [0m
+[0;32mI (33736) UART TEST: Recv str: U[0m
+[0;32mI (33756) UART TEST: Recv str: [0m
+[0;32mI (33786) UART TEST: Recv str: �
+[0;32mI (33806) UART TEST: Recv str: �
+[0;32mI (33836) UART TEST: Recv str: [0m
+[0;32mI (33856) UART TEST: Recv str: [0m
+[0;32mI (33886) UART TEST: Recv str: [0m
+[0;32mI (33906) UART TEST: Recv str: [0m
+[0;32mI (33936) UART TEST: Recv str: [0m
+[0;32mI (33956) UART TEST: Recv str: �
+[0;32mI (33986) UART TEST: Recv str: [0m
+[0;32mI (34006) UART TEST: Recv str: �
+[0;32mI (34036) UART TEST: Recv str: ��[0m
+[0;32mI (34056) UART TEST: Recv str: [0m
+[0;32mI (34086) UART TEST: Recv str: [0m
+[0;32mI (34106) UART TEST: Recv str: [0m
+[0;32mI (34136) UART TEST: Recv str: [0m
+[0;32mI (34156) UART TEST: Recv str: [0m
+[0;32mI (34186) UART TEST: Recv str: ��[0m
+[0;32mI (34206) UART TEST: Recv str: [0m
+[0;32mI (34236) UART TEST: Recv str: [0m
+[0;32mI (34256) UART TEST: Recv str: [0m
+[0;32mI (34286) UART TEST: Recv str: [0m
+[0;32mI (34306) UART TEST: Recv str: [0m
+[0;32mI (34336) UART TEST: Recv str: �[0m
+[0;32mI (34356) UART TEST: Recv str: �
+[0;32mI (34386) UART TEST: Recv str: [0m
+[0;32mI (34406) UART TEST: Recv str: [0m
+[0;32mI (34436) UART TEST: Recv str: [0m
+[0;32mI (34456) UART TEST: Recv str: �
+[0;32mI (34486) UART TEST: Recv str: [0m
+[0;32mI (34506) UART TEST: Recv str: [0m
+[0;32mI (34536) UART TEST: Recv str: [0m
+[0;32mI (34556) UART TEST: Recv str: [0m
+[0;32mI (34586) UART TEST: Recv str: [0m
+[0;32mI (34606) UART TEST: Recv str: [0m
+[0;32mI (34636) UART TEST: Recv str: [0m
+[0;32mI (34656) UART TEST: Recv str: [0m
+[0;32mI (34686) UART TEST: Recv str: [0m
+[0;32mI (34706) UART TEST: Recv str: �
+[0;32mI (34736) UART TEST: Recv str: �
+[0;32mI (34756) UART TEST: Recv str: [0m
+[0;32mI (34776) UART TEST: Recv str: [0m
+[0;32mI (37066) UART TEST: Recv str: [0m
+[0;32mI (37086) UART TEST: Recv str: [0m
+[0;32mI (37116) UART TEST: Recv str: [0m
+[0;32mI (37136) UART TEST: Recv str: �[0m
+[0;32mI (37176) UART TEST: Recv str: [0m
+[0;32mI (37416) UART TEST: Recv str: [0m
+[0;32mI (37436) UART TEST: Recv str: [0m
+[0;32mI (37456) UART TEST: Recv str: [0m
+[0;32mI (37476) UART TEST: Recv str: [0m
+[0;32mI (37496) UART TEST: Recv str: [0m
+[0;32mI (37516) UART TEST: Recv str: [0m
+[0;32mI (37536) UART TEST: Recv str: [0m
+[0;32mI (37556) UART TEST: Recv str: [0m
+[0;32mI (37576) UART TEST: Recv str: [0m
+[0;32mI (37596) UART TEST: Recv str: [0m
+[0;32mI (37616) UART TEST: Recv str: [0m
+[0;32mI (37636) UART TEST: Recv str: [0m
+[0;32mI (37656) UART TEST: Recv str: [0m
+[0;32mI (37676) UART TEST: Recv str: [0m
+[0;32mI (37696) UART TEST: Recv str: [0m
+[0;32mI (37716) UART TEST: Recv str: [0m
+[0;32mI (37736) UART TEST: Recv str: [0m
+[0;32mI (37756) UART TEST: Recv str: [0m
+[0;32mI (37776) UART TEST: Recv str: [0m
+[0;32mI (37796) UART TEST: Recv str: [0m
+[0;32mI (37816) UART TEST: Recv str: [0m
+[0;32mI (37836) UART TEST: Recv str: ��[0m
+[0;32mI (37926) UART TEST: Recv str: )[0m
+[0;32mI (37946) UART TEST: Recv str: )[0m
+[0;32mI (37966) UART TEST: Recv str: )[0m
+[0;32mI (37986) UART TEST: Recv str: [0m
+[0;32mI (38016) UART TEST: Recv str: [0m
+[0;32mI (38036) UART TEST: Recv str: �
+[0;32mI (38066) UART TEST: Recv str: [0m
+[0;32mI (38086) UART TEST: Recv str: �
+[0;32mI (38116) UART TEST: Recv str: [0m
+[0;32mI (38136) UART TEST: Recv str: [0m
+[0;32mI (38166) UART TEST: Recv str: [0m
+[0;32mI (38186) UART TEST: Recv str: [0m
+[0;32mI (38216) UART TEST: Recv str: [0m
+[0;32mI (38236) UART TEST: Recv str: [0m
+[0;32mI (38266) UART TEST: Recv str: [0m
+[0;32mI (38286) UART TEST: Recv str: [0m
+[0;32mI (38316) UART TEST: Recv str: [0m
+[0;32mI (38336) UART TEST: Recv str: [0m
+[0;32mI (38366) UART TEST: Recv str: [0m
+[0;32mI (38386) UART TEST: Recv str: �
+[0;32mI (38416) UART TEST: Recv str: �
+[0;32mI (38436) UART TEST: Recv str: �
+[0;32mI (38466) UART TEST: Recv str: �
+[0;32mI (38486) UART TEST: Recv str: �
+[0;32mI (38516) UART TEST: Recv str: [0m
+[0;32mI (38536) UART TEST: Recv str: �
+[0;32mI (38566) UART TEST: Recv str: [0m
+[0;32mI (38586) UART TEST: Recv str: [0m
+[0;32mI (38616) UART TEST: Recv str: [0m
+[0;32mI (38636) UART TEST: Recv str: [0m
+[0;32mI (38666) UART TEST: Recv str: [0m
+[0;32mI (38686) UART TEST: Recv str: �
+[0;32mI (38716) UART TEST: Recv str: [0m
+[0;32mI (38736) UART TEST: Recv str: �
+[0;32mI (38766) UART TEST: Recv str: ��[0m
+[0;32mI (38786) UART TEST: Recv str: �
+[0;32mI (38816) UART TEST: Recv str: [0m
+[0;32mI (38836) UART TEST: Recv str: [0m
+[0;32mI (38866) UART TEST: Recv str: [0m
+[0;32mI (38886) UART TEST: Recv str: [0m
+[0;32mI (38916) UART TEST: Recv str: [0m
+[0;32mI (38936) UART TEST: Recv str: [0m
+[0;32mI (38966) UART TEST: Recv str: [0m
+[0;32mI (38986) UART TEST: Recv str: �
+[0;32mI (39016) UART TEST: Recv str: ��[0m
+[0;32mI (39036) UART TEST: Recv str: �
+[0;32mI (39066) UART TEST: Recv str: [0m
+[0;32mI (39086) UART TEST: Recv str: �
+[0;32mI (39116) UART TEST: Recv str: �
+[0;32mI (39136) UART TEST: Recv str: [0m
+[0;32mI (39166) UART TEST: Recv str: [0m
+[0;32mI (39186) UART TEST: Recv str: [0m
+[0;32mI (39216) UART TEST: Recv str: [0m
+[0;32mI (39236) UART TEST: Recv str: �
+[0;32mI (39266) UART TEST: Recv str: [0m
+[0;32mI (39286) UART TEST: Recv str: �
+[0;32mI (39316) UART TEST: Recv str: ���[0m
+[0;32mI (39336) UART TEST: Recv str: [0m
+[0;32mI (39366) UART TEST: Recv str: �
+[0;32mI (39386) UART TEST: Recv str: [0m
+[0;32mI (39416) UART TEST: Recv str: [0m
+[0;32mI (39436) UART TEST: Recv str: [0m
+[0;32mI (39466) UART TEST: Recv str: �
+[0;32mI (39486) UART TEST: Recv str: �
+[0;32mI (39516) UART TEST: Recv str: [0m
+[0;32mI (39536) UART TEST: Recv str: �
+[0;32mI (39566) UART TEST: Recv str: [0m
+[0;32mI (39586) UART TEST: Recv str: [0m
+[0;32mI (39616) UART TEST: Recv str: [0m
+[0;32mI (39636) UART TEST: Recv str: �
+[0;32mI (39666) UART TEST: Recv str: ��[0m
+[0;32mI (39686) UART TEST: Recv str: [0m
+[0;32mI (39716) UART TEST: Recv str: [0m
+[0;32mI (39736) UART TEST: Recv str: [0m
+[0;32mI (39766) UART TEST: Recv str: [0m
+[0;32mI (39786) UART TEST: Recv str: [0m
+[0;32mI (39816) UART TEST: Recv str: [0m
+[0;32mI (39836) UART TEST: Recv str: [0m
+[0;32mI (39866) UART TEST: Recv str: [0m
+[0;32mI (39886) UART TEST: Recv str: �
+[0;32mI (39916) UART TEST: Recv str: [0m
+[0;32mI (39936) UART TEST: Recv str: �
+[0;32mI (39966) UART TEST: Recv str: [0m
+[0;32mI (39986) UART TEST: Recv str: [0m
+[0;32mI (40016) UART TEST: Recv str: [0m
+[0;32mI (40036) UART TEST: Recv str: [0m
+[0;32mI (40066) UART TEST: Recv str: �
+[0;32mI (40086) UART TEST: Recv str: [0m
+[0;32mI (40116) UART TEST: Recv str: [0m
+[0;32mI (40136) UART TEST: Recv str: [0m
+[0;32mI (40166) UART TEST: Recv str: [0m
+[0;32mI (40186) UART TEST: Recv str: �
+[0;32mI (40216) UART TEST: Recv str: [0m
+[0;32mI (40236) UART TEST: Recv str: �
+[0;32mI (40266) UART TEST: Recv str: ���[0m
+[0;32mI (40286) UART TEST: Recv str: �
+[0;32mI (40316) UART TEST: Recv str: ���[0m
+[0;32mI (40336) UART TEST: Recv str: �
+[0;32mI (40366) UART TEST: Recv str: ���[0m
+[0;32mI (40386) UART TEST: Recv str: �
+[0;32mI (40416) UART TEST: Recv str: [0m
+[0;32mI (40446) UART TEST: Recv str: �
+[0;32mI (40466) UART TEST: Recv str: [0m
+[0;32mI (40496) UART TEST: Recv str: [0m
+[0;32mI (40516) UART TEST: Recv str: �
+[0;32mI (40546) UART TEST: Recv str: [0m
+[0;32mI (40566) UART TEST: Recv str: �
+[0;32mI (40596) UART TEST: Recv str: �
+[0;32mI (40616) UART TEST: Recv str: [0m
+[0;32mI (40666) UART TEST: Recv str: �
+[0;32mI (40696) UART TEST: Recv str: [0m
+[0;32mI (40716) UART TEST: Recv str: �
+[0;32mI (40746) UART TEST: Recv str: �
+[0;32mI (40766) UART TEST: Recv str: [0m
+[0;32mI (40796) UART TEST: Recv str: [0m
+[0;32mI (40816) UART TEST: Recv str: �
+[0;32mI (40846) UART TEST: Recv str: �
+[0;32mI (40866) UART TEST: Recv str: [0m
+[0;32mI (40896) UART TEST: Recv str: ��[0m
+[0;32mI (40916) UART TEST: Recv str: �
+[0;32mI (40946) UART TEST: Recv str: [0m
+[0;32mI (40966) UART TEST: Recv str: [0m
+[0;32mI (40996) UART TEST: Recv str: [0m
+[0;32mI (41016) UART TEST: Recv str: [0m
+[0;32mI (41046) UART TEST: Recv str: �
+[0;32mI (41066) UART TEST: Recv str: �
+[0;32mI (41096) UART TEST: Recv str: [0m
+[0;32mI (41116) UART TEST: Recv str: [0m
+[0;32mI (41146) UART TEST: Recv str: �
+[0;32mI (41166) UART TEST: Recv str: 	�
+[0;32mI (41196) UART TEST: Recv str: [0m
+[0;32mI (41216) UART TEST: Recv str: �
+[0;32mI (41246) UART TEST: Recv str: [0m
+[0;32mI (41266) UART TEST: Recv str: �
+[0;32mI (41296) UART TEST: Recv str: [0m
+[0;32mI (41316) UART TEST: Recv str: �
+[0;32mI (41346) UART TEST: Recv str: [0m
+[0;32mI (41366) UART TEST: Recv str: [0m
+[0;32mI (41396) UART TEST: Recv str: [0m
+[0;32mI (41416) UART TEST: Recv str: [0m
+[0;32mI (41446) UART TEST: Recv str: [0m
+[0;32mI (41466) UART TEST: Recv str: [0m
+[0;32mI (41496) UART TEST: Recv str: [0m
+[0;32mI (41516) UART TEST: Recv str: [0m
+[0;32mI (41546) UART TEST: Recv str: [0m
+[0;32mI (41566) UART TEST: Recv str: [0m
+[0;32mI (41596) UART TEST: Recv str: [0m
+[0;32mI (41616) UART TEST: Recv str: [0m
+[0;32mI (41646) UART TEST: Recv str: [0m
+[0;32mI (41666) UART TEST: Recv str: �
+[0;32mI (41696) UART TEST: Recv str: [0m
+[0;32mI (41716) UART TEST: Recv str: [0m
+[0;32mI (41746) UART TEST: Recv str: ��[0m
+[0;32mI (41766) UART TEST: Recv str: �
+[0;32mI (41796) UART TEST: Recv str: �
+[0;32mI (41816) UART TEST: Recv str: �
+[0;32mI (41846) UART TEST: Recv str: [0m
+[0;32mI (41866) UART TEST: Recv str: �
+[0;32mI (41896) UART TEST: Recv str: �
+[0;32mI (41916) UART TEST: Recv str: �
+[0;32mI (41946) UART TEST: Recv str: �
+[0;32mI (41966) UART TEST: Recv str: [0m
+[0;32mI (41996) UART TEST: Recv str: [0m
+[0;32mI (42016) UART TEST: Recv str: [0m
+[0;32mI (42046) UART TEST: Recv str: [0m
+[0;32mI (42066) UART TEST: Recv str: [0m
+[0;32mI (42096) UART TEST: Recv str: [0m
+[0;32mI (42116) UART TEST: Recv str: �
+[0;32mI (42146) UART TEST: Recv str: [0m
+[0;32mI (42166) UART TEST: Recv str: �
+[0;32mI (42196) UART TEST: Recv str: ��[0m
+[0;32mI (42216) UART TEST: Recv str: [0m
+[0;32mI (42246) UART TEST: Recv str: [0m
+[0;32mI (42266) UART TEST: Recv str: [0m
+[0;32mI (42296) UART TEST: Recv str: [0m
+[0;32mI (42316) UART TEST: Recv str: [0m
+[0;32mI (42346) UART TEST: Recv str: [0m
+[0;32mI (42366) UART TEST: Recv str: �
+[0;32mI (42396) UART TEST: Recv str: [0m
+[0;32mI (42416) UART TEST: Recv str: �
+[0;32mI (42446) UART TEST: Recv str: ��[0m
+[0;32mI (42466) UART TEST: Recv str: [0m
+[0;32mI (42496) UART TEST: Recv str: ��[0m
+[0;32mI (42516) UART TEST: Recv str: [0m
+[0;32mI (42546) UART TEST: Recv str: �[0m
+[0;32mI (42566) UART TEST: Recv str: [0m
+[0;32mI (42596) UART TEST: Recv str: ��[0m
+[0;32mI (42616) UART TEST: Recv str: [0m
+[0;32mI (42646) UART TEST: Recv str: [0m
+[0;32mI (42666) UART TEST: Recv str: [0m
+[0;32mI (42696) UART TEST: Recv str: [0m
+[0;32mI (42716) UART TEST: Recv str: [0m
+[0;32mI (42746) UART TEST: Recv str: [0m
+[0;32mI (42766) UART TEST: Recv str: �
+[0;32mI (42796) UART TEST: Recv str: [0m
+[0;32mI (42816) UART TEST: Recv str: [0m
+[0;32mI (42846) UART TEST: Recv str: [0m
+[0;32mI (42866) UART TEST: Recv str: [0m
+[0;32mI (42896) UART TEST: Recv str: [0m
+[0;32mI (42916) UART TEST: Recv str: �
+[0;32mI (42946) UART TEST: Recv str: [0m
+[0;32mI (42966) UART TEST: Recv str: [0m
+[0;32mI (42996) UART TEST: Recv str: [0m
+[0;32mI (43016) UART TEST: Recv str: [0m
+[0;32mI (43046) UART TEST: Recv str: [0m
+[0;32mI (43066) UART TEST: Recv str: [0m
+[0;32mI (43096) UART TEST: Recv str: [0m
+[0;32mI (43116) UART TEST: Recv str: �
+[0;32mI (43146) UART TEST: Recv str: �
+[0;32mI (43166) UART TEST: Recv str: [0m
+[0;32mI (43196) UART TEST: Recv str: [0m
+[0;32mI (43216) UART TEST: Recv str: �
+[0;32mI (43246) UART TEST: Recv str: [0m
+[0;32mI (43266) UART TEST: Recv str: [0m
+[0;32mI (43296) UART TEST: Recv str: [0m
+[0;32mI (43316) UART TEST: Recv str: �
+[0;32mI (43346) UART TEST: Recv str: [0m
+[0;32mI (43366) UART TEST: Recv str: �
+[0;32mI (43396) UART TEST: Recv str: [0m
+[0;32mI (43416) UART TEST: Recv str: �
+[0;32mI (43446) UART TEST: Recv str: [0m
+[0;32mI (43466) UART TEST: Recv str: �
+[0;32mI (43496) UART TEST: Recv str: [0m
+[0;32mI (43516) UART TEST: Recv str: �
+[0;32mI (43546) UART TEST: Recv str: [0m
+[0;32mI (43566) UART TEST: Recv str: [0m
+[0;32mI (43596) UART TEST: Recv str: [0m
+[0;32mI (43646) UART TEST: Recv str: [0m
+[0;32mI (43696) UART TEST: Recv str: [0m
+[0;32mI (43716) UART TEST: Recv str: [0m
+[0;32mI (43746) UART TEST: Recv str: [0m
+[0;32mI (43776) UART TEST: Recv str: [0m
+[0;32mI (43796) UART TEST: Recv str: [0m
+[0;32mI (43826) UART TEST: Recv str: [0m
+[0;32mI (43846) UART TEST: Recv str: [0m
+[0;32mI (43876) UART TEST: Recv str: [0m
+[0;32mI (43896) UART TEST: Recv str: [0m
+[0;32mI (43926) UART TEST: Recv str: [0m
+[0;32mI (43946) UART TEST: Recv str: [0m
+[0;32mI (43976) UART TEST: Recv str: [0m
+[0;32mI (43996) UART TEST: Recv str: [0m
+[0;32mI (44026) UART TEST: Recv str: [0m
+[0;32mI (44046) UART TEST: Recv str: [0m
+[0;32mI (44066) UART TEST: Recv str: [0m
+[0;32mI (44096) UART TEST: Recv str: [0m
+[0;32mI (44116) UART TEST: Recv str: [0m
+[0;32mI (44146) UART TEST: Recv str: [0m
+[0;32mI (44166) UART TEST: Recv str: [0m
+[0;32mI (44196) UART TEST: Recv str: [0m
+[0;32mI (44216) UART TEST: Recv str: �
+[0;32mI (44246) UART TEST: Recv str: [0m
+[0;32mI (44266) UART TEST: Recv str: [0m
+[0;32mI (44296) UART TEST: Recv str: [0m
+[0;32mI (44316) UART TEST: Recv str: [0m
+[0;32mI (44346) UART TEST: Recv str: [0m
+[0;32mI (44366) UART TEST: Recv str: [0m
+[0;32mI (44396) UART TEST: Recv str: �
+[0;32mI (44416) UART TEST: Recv str: �
+[0;32mI (44446) UART TEST: Recv str: [0m
+[0;32mI (44466) UART TEST: Recv str: [0m
+[0;32mI (44496) UART TEST: Recv str: �
+[0;32mI (44516) UART TEST: Recv str: [0m
+[0;32mI (44546) UART TEST: Recv str: [0m
+[0;32mI (44566) UART TEST: Recv str: [0m
+[0;32mI (44596) UART TEST: Recv str: �
+[0;32mI (44616) UART TEST: Recv str: [0m
+[0;32mI (44646) UART TEST: Recv str: [0m
+[0;32mI (44666) UART TEST: Recv str: [0m
+[0;32mI (44696) UART TEST: Recv str: [0m
+[0;32mI (44746) UART TEST: Recv str: [0m
+[0;32mI (44766) UART TEST: Recv str: [0m
+[0;32mI (44796) UART TEST: Recv str: [0m
+[0;32mI (44816) UART TEST: Recv str: [0m
+[0;32mI (44846) UART TEST: Recv str: ��[0m
+[0;32mI (44866) UART TEST: Recv str: [0m
+[0;32mI (44896) UART TEST: Recv str: [0m
+[0;32mI (44916) UART TEST: Recv str: �
+[0;32mI (44946) UART TEST: Recv str: [0m
+[0;32mI (44966) UART TEST: Recv str: [0m
+[0;32mI (44996) UART TEST: Recv str: [0m
+[0;32mI (45016) UART TEST: Recv str: �
+[0;32mI (45046) UART TEST: Recv str: ��[0m
+[0;32mI (45066) UART TEST: Recv str: �
+[0;32mI (45096) UART TEST: Recv str: [0m
+[0;32mI (45116) UART TEST: Recv str: [0m
+[0;32mI (45146) UART TEST: Recv str: [0m
+[0;32mI (45166) UART TEST: Recv str: [0m
+[0;32mI (45196) UART TEST: Recv str: [0m
+[0;32mI (45216) UART TEST: Recv str: �
+[0;32mI (45246) UART TEST: Recv str: ��[0m
+[0;32mI (45266) UART TEST: Recv str: �
+[0;32mI (45296) UART TEST: Recv str: [0m
+[0;32mI (45316) UART TEST: Recv str: �
+[0;32mI (45346) UART TEST: Recv str: ��[0m
+[0;32mI (45366) UART TEST: Recv str: �
+[0;32mI (45396) UART TEST: Recv str: [0m
+[0;32mI (45416) UART TEST: Recv str: �
+[0;32mI (45446) UART TEST: Recv str: ��[0m
+[0;32mI (45466) UART TEST: Recv str: �
+[0;32mI (45496) UART TEST: Recv str: [0m
+[0;32mI (45516) UART TEST: Recv str: [0m
+[0;32mI (45546) UART TEST: Recv str: [0m
+[0;32mI (45566) UART TEST: Recv str: [0m
+[0;32mI (45596) UART TEST: Recv str: [0m
+[0;32mI (45646) UART TEST: Recv str: [0m
+[0;32mI (45666) UART TEST: Recv str: [0m
+[0;32mI (45696) UART TEST: Recv str: ���[0m
+[0;32mI (45746) UART TEST: Recv str: [0m
+[0;32mI (45776) UART TEST: Recv str: [0m
+[0;32mI (45796) UART TEST: Recv str: �
+[0;32mI (45826) UART TEST: Recv str: [0m
+[0;32mI (45846) UART TEST: Recv str: �
+[0;32mI (45876) UART TEST: Recv str: [0m
+[0;32mI (45896) UART TEST: Recv str: [0m
+[0;32mI (45926) UART TEST: Recv str: [0m
+[0;32mI (45946) UART TEST: Recv str: �
+[0;32mI (45976) UART TEST: Recv str: [0m
+[0;32mI (45996) UART TEST: Recv str: [0m
+[0;32mI (46026) UART TEST: Recv str: [0m
+[0;32mI (46046) UART TEST: Recv str: �
+[0;32mI (46076) UART TEST: Recv str: �
+[0;32mI (46096) UART TEST: Recv str: [0m
+[0;32mI (46126) UART TEST: Recv str: ��[0m
+[0;32mI (46146) UART TEST: Recv str: �
+[0;32mI (46176) UART TEST: Recv str: [0m
+[0;32mI (46196) UART TEST: Recv str: �
+[0;32mI (46226) UART TEST: Recv str: [0m
+[0;32mI (46246) UART TEST: Recv str: [0m
+[0;32mI (46276) UART TEST: Recv str: [0m
+[0;32mI (46296) UART TEST: Recv str: [0m
+[0;32mI (46326) UART TEST: Recv str: [0m
+[0;32mI (46346) UART TEST: Recv str: [0m
+[0;32mI (46376) UART TEST: Recv str: [0m
+[0;32mI (46396) UART TEST: Recv str: [0m
+[0;32mI (46426) UART TEST: Recv str: [0m
+[0;32mI (46446) UART TEST: Recv str: [0m
+[0;32mI (46476) UART TEST: Recv str: ��[0m
+[0;32mI (46496) UART TEST: Recv str: �
+[0;32mI (46526) UART TEST: Recv str: �
+[0;32mI (46546) UART TEST: Recv str: [0m
+[0;32mI (46576) UART TEST: Recv str: [0m
+[0;32mI (46596) UART TEST: Recv str: �
+[0;32mI (46626) UART TEST: Recv str: ��[0m
+[0;32mI (46646) UART TEST: Recv str: �
+[0;32mI (46676) UART TEST: Recv str: ��[0m
+[0;32mI (46696) UART TEST: Recv str: [0m
+[0;32mI (46726) UART TEST: Recv str: ��[0m
+[0;32mI (46746) UART TEST: Recv str: [0m
+[0;32mI (46776) UART TEST: Recv str: �
+[0;32mI (46796) UART TEST: Recv str: [0m
+[0;32mI (46826) UART TEST: Recv str: [0m
+[0;32mI (46846) UART TEST: Recv str: �
+[0;32mI (46876) UART TEST: Recv str: [0m
+[0;32mI (46896) UART TEST: Recv str: [0m
+[0;32mI (46926) UART TEST: Recv str: �
+[0;32mI (46946) UART TEST: Recv str: [0m
+[0;32mI (46976) UART TEST: Recv str: [0m
+[0;32mI (46996) UART TEST: Recv str: [0m
+[0;32mI (47026) UART TEST: Recv str: [0m
+[0;32mI (47046) UART TEST: Recv str: [0m
+[0;32mI (47076) UART TEST: Recv str: [0m
+[0;32mI (47096) UART TEST: Recv str: [0m
+[0;32mI (47126) UART TEST: Recv str: [0m
+[0;32mI (47146) UART TEST: Recv str: [0m
+[0;32mI (47176) UART TEST: Recv str: [0m
+[0;32mI (47196) UART TEST: Recv str: [0m
+[0;32mI (47226) UART TEST: Recv str: [0m
+[0;32mI (47246) UART TEST: Recv str: [0m
+[0;32mI (47276) UART TEST: Recv str: [0m
+[0;32mI (47296) UART TEST: Recv str: [0m
+[0;32mI (47326) UART TEST: Recv str: [0m
+[0;32mI (47346) UART TEST: Recv str: [0m
+[0;32mI (47376) UART TEST: Recv str: [0m
+[0;32mI (47396) UART TEST: Recv str: [0m
+[0;32mI (47426) UART TEST: Recv str: [0m
+[0;32mI (47446) UART TEST: Recv str: [0m
+[0;32mI (47476) UART TEST: Recv str: [0m
+[0;32mI (47496) UART TEST: Recv str: �
+[0;32mI (47526) UART TEST: Recv str: [0m
+[0;32mI (47546) UART TEST: Recv str: �
+[0;32mI (47576) UART TEST: Recv str: [0m
+[0;32mI (47596) UART TEST: Recv str: �
+[0;32mI (47626) UART TEST: Recv str: [0m
+[0;32mI (47646) UART TEST: Recv str: [0m
+[0;32mI (47676) UART TEST: Recv str: [0m
+[0;32mI (47696) UART TEST: Recv str: [0m
+[0;32mI (47726) UART TEST: Recv str: [0m
+[0;32mI (47746) UART TEST: Recv str: �
+[0;32mI (47776) UART TEST: Recv str: �
+[0;32mI (47796) UART TEST: Recv str: �
+[0;32mI (47826) UART TEST: Recv str: [0m
+[0;32mI (47846) UART TEST: Recv str: �
+[0;32mI (47876) UART TEST: Recv str: [0m
+[0;32mI (47896) UART TEST: Recv str: [0m
+[0;32mI (47926) UART TEST: Recv str: [0m
+[0;32mI (47946) UART TEST: Recv str: �
+[0;32mI (47976) UART TEST: Recv str: [0m
+[0;32mI (47996) UART TEST: Recv str: [0m
+[0;32mI (48026) UART TEST: Recv str: �
+[0;32mI (48046) UART TEST: Recv str: �
+[0;32mI (48076) UART TEST: Recv str: [0m
+[0;32mI (48096) UART TEST: Recv str: �
+[0;32mI (48126) UART TEST: Recv str: [0m
+[0;32mI (48146) UART TEST: Recv str: [0m
+[0;32mI (48176) UART TEST: Recv str: [0m
+[0;32mI (48196) UART TEST: Recv str: �
+[0;32mI (48226) UART TEST: Recv str: ��[0m
+[0;32mI (48246) UART TEST: Recv str: �
+[0;32mI (48276) UART TEST: Recv str: [0m
+[0;32mI (48296) UART TEST: Recv str: [0m
+[0;32mI (48326) UART TEST: Recv str: ��[0m
+[0;32mI (48346) UART TEST: Recv str: [0m
+[0;32mI (48376) UART TEST: Recv str: [0m
+[0;32mI (48396) UART TEST: Recv str: [0m
+[0;32mI (48426) UART TEST: Recv str: [0m
+[0;32mI (48446) UART TEST: Recv str: �
+[0;32mI (48476) UART TEST: Recv str: [0m
+[0;32mI (48496) UART TEST: Recv str: [0m
+[0;32mI (48526) UART TEST: Recv str: [0m
+[0;32mI (48546) UART TEST: Recv str: �
+[0;32mI (48566) UART TEST: Recv str: [0m
+[0;32mI (48596) UART TEST: Recv str: [0m
+[0;32mI (48636) UART TEST: Recv str: [0m
+[0;32mI (48656) UART TEST: Recv str: [0m
+[0;32mI (48676) UART TEST: Recv str: [0m
+[0;32mI (48696) UART TEST: Recv str: [0m
+[0;32mI (48726) UART TEST: Recv str: [0m
+[0;32mI (48746) UART TEST: Recv str: [0m
+[0;32mI (48776) UART TEST: Recv str: [0m
+[0;32mI (48796) UART TEST: Recv str: [0m
+[0;32mI (48826) UART TEST: Recv str: ��[0m
+[0;32mI (48846) UART TEST: Recv str: �
+[0;32mI (48876) UART TEST: Recv str: /��[0m
+[0;32mI (48896) UART TEST: Recv str: [0m
+[0;32mI (48926) UART TEST: Recv str: [0m
+[0;32mI (48946) UART TEST: Recv str: [0m
+[0;32mI (48976) UART TEST: Recv str: [0m
+[0;32mI (48996) UART TEST: Recv str: [0m
+[0;32mI (49026) UART TEST: Recv str: [0m
+[0;32mI (49046) UART TEST: Recv str: �
+[0;32mI (49076) UART TEST: Recv str: [0m
+[0;32mI (49096) UART TEST: Recv str: �
+[0;32mI (49126) UART TEST: Recv str: [0m
+[0;32mI (49146) UART TEST: Recv str: �
+[0;32mI (49176) UART TEST: Recv str: [0m
+[0;32mI (49196) UART TEST: Recv str: �
+[0;32mI (49226) UART TEST: Recv str: [0m
+[0;32mI (49246) UART TEST: Recv str: [0m
+[0;32mI (49286) UART TEST: Recv str: �
+[0;32mI (49326) UART TEST: Recv str: [0m
+[0;32mI (49346) UART TEST: Recv str: [0m
+[0;32mI (49376) UART TEST: Recv str: [0m
+[0;32mI (49396) UART TEST: Recv str: �
+[0;32mI (49426) UART TEST: Recv str: ��[0m
+[0;32mI (49446) UART TEST: Recv str: �
+[0;32mI (49476) UART TEST: Recv str: �
+[0;32mI (49496) UART TEST: Recv str: [0m
+[0;32mI (49526) UART TEST: Recv str: �[0m
+[0;32mI (49546) UART TEST: Recv str: [0m
+[0;32mI (49576) UART TEST: Recv str: [0m
+[0;32mI (49596) UART TEST: Recv str: �
+[0;32mI (49626) UART TEST: Recv str: [0m
+[0;32mI (49646) UART TEST: Recv str: �
+[0;32mI (49676) UART TEST: Recv str: �
+[0;32mI (49696) UART TEST: Recv str: �
+[0;32mI (49726) UART TEST: Recv str: [0m
+[0;32mI (49746) UART TEST: Recv str: [0m
+[0;32mI (49776) UART TEST: Recv str: [0m
+[0;32mI (49796) UART TEST: Recv str: [0m
+[0;32mI (49826) UART TEST: Recv str: ��[0m
+[0;32mI (49846) UART TEST: Recv str: �
+[0;32mI (49876) UART TEST: Recv str: [0m
+[0;32mI (49896) UART TEST: Recv str: �
+[0;32mI (49926) UART TEST: Recv str: [0m
+[0;32mI (49946) UART TEST: Recv str: [0m
+[0;32mI (49976) UART TEST: Recv str: [0m
+[0;32mI (49996) UART TEST: Recv str: �
+[0;32mI (50026) UART TEST: Recv str: ��[0m
+[0;32mI (50046) UART TEST: Recv str: �
+[0;32mI (50076) UART TEST: Recv str: [0m
+[0;32mI (50096) UART TEST: Recv str: [0m
+[0;32mI (50126) UART TEST: Recv str: [0m
+[0;32mI (50146) UART TEST: Recv str: �
+[0;32mI (50176) UART TEST: Recv str: [0m
+[0;32mI (50196) UART TEST: Recv str: [0m
+[0;32mI (50226) UART TEST: Recv str: ��[0m
+[0;32mI (50246) UART TEST: Recv str: �
+[0;32mI (50276) UART TEST: Recv str: [0m
+[0;32mI (50296) UART TEST: Recv str: �
+[0;32mI (50316) UART TEST: Recv str: �
+[0;32mI (50496) UART TEST: Recv str: [0m
+[0;32mI (50516) UART TEST: Recv str: [0m
+[0;32mI (50896) UART TEST: Recv str: [0m
+[0;32mI (50926) UART TEST: Recv str: [0m
+[0;32mI (50946) UART TEST: Recv str: [0m
+[0;32mI (50976) UART TEST: Recv str: �r[0m
+[0;32mI (50996) UART TEST: Recv str: [0m
+[0;32mI (51026) UART TEST: Recv str: �
+[0;32mI (51046) UART TEST: Recv str: �
+[0;32mI (51066) UART TEST: Recv str: [0m
+[0;32mI (51096) UART TEST: Recv str: [0m
+[0;32mI (51116) UART TEST: Recv str: [0m
+[0;32mI (51146) UART TEST: Recv str: [0m
+[0;32mI (51176) UART TEST: Recv str: [0m
+[0;32mI (51196) UART TEST: Recv str: [0m
+[0;32mI (51226) UART TEST: Recv str: [0m
+[0;32mI (51246) UART TEST: Recv str: [0m
+[0;32mI (51276) UART TEST: Recv str: [0m
+[0;32mI (51296) UART TEST: Recv str: [0m

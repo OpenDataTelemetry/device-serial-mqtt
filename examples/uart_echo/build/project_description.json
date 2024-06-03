@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "uart_echo",
-    "project_version":    "588e6e0-dirty",
+    "project_version":    "88a6fbd-dirty",
     "project_path":       "/workspaces/examples/uart_echo",
     "idf_path":           "/opt/esp/idf",
     "build_dir":          "/workspaces/examples/uart_echo/build",

@@ -1,0 +1,24 @@
+1
+I (4634) UART TEST: Other event id:7
+I (4634) main_task: Returned from app_main()
+I (4644) wifi:<ba-del>idx:0, tid:5
+I (4654) wifi:<ba-add>idx:0 (ifx:0, b8:5e:71:dc:8f:74), tid:0, ssn:0, winSize:64
+I (4654) wifi:<ba-del>idx:0, tid:0
+I (4654) wifi:<ba-add>idx:0 (ifx:0, b8:5e:71:dc:8f:74), tid:0, ssn:1, winSize:64
+I (4744) UART TEST: MQTT_EVENT_CONNECTED
+I (4754) UART TEST: sent publish successful, msg_id=49164
+I (4754) UART TEST: sent subscribe successful, msg_id=62491
+I (4794) mqtt5_client: MQTT_MSG_TYPE_PUBACK return code is 0
+I (4794) UART TEST: MQTT_EVENT_PUBLISHED, msg_id=49164
+I (4814) mqtt5_client: MQTT_MSG_TYPE_SUBACK return code is 0
+I (4814) UART TEST: MQTT_EVENT_SUBSCRIBED, msg_id=62491
+I (4824) UART TEST: sent publish successful, msg_id=0
+I (4844) UART TEST: MQTT_EVENT_DATA
+I (4844) UART TEST: payload_format_indicator is 1
+I (4844) UART TEST: response_topic is /topic/test/response
+I (4854) UART TEST: correlation_data is 123456
+I (4854) UART TEST: content_type is 
+I (4864) UART TEST: TOPIC=/topic/qos0
+I (4864) UART TEST: DATA=data
+
+

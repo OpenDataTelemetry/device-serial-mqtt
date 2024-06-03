@@ -1,0 +1,129 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+Processing 2 dependencies:
+[1/2] idf (5.2.1)
+[2/2] protocol_examples_common (*)
+-- Project sdkconfig file /workspaces/sdkconfig
+Loading defaults file /workspaces/sdkconfig.defaults...
+-- Compiler supported targets: xtensa-esp-elf
+-- App "mqtt50" version: 88a6fbd-dirty
+-- Adding linker script /workspaces/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /opt/esp/idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /opt/esp/idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /opt/esp/idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /opt/esp/idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /opt/esp/idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /opt/esp/idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /opt/esp/idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /opt/esp/idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocol_examples_common protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /opt/esp/idf/components/app_trace /opt/esp/idf/components/app_update /opt/esp/idf/components/bootloader /opt/esp/idf/components/bootloader_support /opt/esp/idf/components/bt /opt/esp/idf/components/cmock /opt/esp/idf/components/console /opt/esp/idf/components/cxx /opt/esp/idf/components/driver /opt/esp/idf/components/efuse /opt/esp/idf/components/esp-tls /opt/esp/idf/components/esp_adc /opt/esp/idf/components/esp_app_format /opt/esp/idf/components/esp_bootloader_format /opt/esp/idf/components/esp_coex /opt/esp/idf/components/esp_common /opt/esp/idf/components/esp_eth /opt/esp/idf/components/esp_event /opt/esp/idf/components/esp_gdbstub /opt/esp/idf/components/esp_hid /opt/esp/idf/components/esp_http_client /opt/esp/idf/components/esp_http_server /opt/esp/idf/components/esp_https_ota /opt/esp/idf/components/esp_https_server /opt/esp/idf/components/esp_hw_support /opt/esp/idf/components/esp_lcd /opt/esp/idf/components/esp_local_ctrl /opt/esp/idf/components/esp_mm /opt/esp/idf/components/esp_netif /opt/esp/idf/components/esp_netif_stack /opt/esp/idf/components/esp_partition /opt/esp/idf/components/esp_phy /opt/esp/idf/components/esp_pm /opt/esp/idf/components/esp_psram /opt/esp/idf/components/esp_ringbuf /opt/esp/idf/components/esp_rom /opt/esp/idf/components/esp_system /opt/esp/idf/components/esp_timer /opt/esp/idf/components/esp_wifi /opt/esp/idf/components/espcoredump /opt/esp/idf/components/esptool_py /opt/esp/idf/components/fatfs /opt/esp/idf/components/freertos /opt/esp/idf/components/hal /opt/esp/idf/components/heap /opt/esp/idf/components/http_parser /opt/esp/idf/components/idf_test /opt/esp/idf/components/ieee802154 /opt/esp/idf/components/json /opt/esp/idf/components/log /opt/esp/idf/components/lwip /workspaces/main /opt/esp/idf/components/mbedtls /opt/esp/idf/components/mqtt /opt/esp/idf/components/newlib /opt/esp/idf/components/nvs_flash /opt/esp/idf/components/nvs_sec_provider /opt/esp/idf/components/openthread /opt/esp/idf/components/partition_table /opt/esp/idf/components/perfmon /opt/esp/idf/components/protobuf-c /opt/esp/idf/examples/common_components/protocol_examples_common /opt/esp/idf/components/protocomm /opt/esp/idf/components/pthread /opt/esp/idf/components/sdmmc /opt/esp/idf/components/soc /opt/esp/idf/components/spi_flash /opt/esp/idf/components/spiffs /opt/esp/idf/components/tcp_transport /opt/esp/idf/components/ulp /opt/esp/idf/components/unity /opt/esp/idf/components/usb /opt/esp/idf/components/vfs /opt/esp/idf/components/wear_levelling /opt/esp/idf/components/wifi_provisioning /opt/esp/idf/components/wpa_supplicant /opt/esp/idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspaces/build
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+/workspaces/main/app_main.c:42:13: warning: 'echo_task' defined but not used [-Wunused-function]
+   42 | static void echo_task(void *arg)
+      |             ^~~~~~~~~
+[2/10] Linking C static library esp-idf/main/libmain.a
+[3/10] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /workspaces/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Adding linker script /opt/esp/idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script /opt/esp/idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /opt/esp/idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /opt/esp/idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /opt/esp/idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /opt/esp/idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /opt/esp/idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /opt/esp/idf/components/bootloader /opt/esp/idf/components/bootloader_support /opt/esp/idf/components/efuse /opt/esp/idf/components/esp_app_format /opt/esp/idf/components/esp_bootloader_format /opt/esp/idf/components/esp_common /opt/esp/idf/components/esp_hw_support /opt/esp/idf/components/esp_rom /opt/esp/idf/components/esp_system /opt/esp/idf/components/esptool_py /opt/esp/idf/components/freertos /opt/esp/idf/components/hal /opt/esp/idf/components/log /opt/esp/idf/components/bootloader/subproject/main /opt/esp/idf/components/bootloader/subproject/components/micro-ecc /opt/esp/idf/components/newlib /opt/esp/idf/components/partition_table /opt/esp/idf/components/soc /opt/esp/idf/components/spi_flash /opt/esp/idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspaces/build/bootloader
+[1/1] cd /workspaces/build/bootloader/esp-idf/esptool_py && /opt/esp/python_env/idf5.2_py3.10_env/bin/python /opt/esp/idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /workspaces/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable mqtt50.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /workspaces/build/mqtt50.bin
+[7/8] cd /workspaces/build/esp-idf/esptool_py && /opt/esp/python_env/idf5.2_py3.10_env/bin/python /opt/esp/idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /workspaces/build/partition_table/partition-table.bin /workspaces/build/mqtt50.bin
+mqtt50.bin binary size 0xe1310 bytes. Smallest app partition is 0x100000 bytes. 0x1ecf0 bytes (12%) free.
+[7/8] cd /opt/esp/idf/components/esptool_py && /opt/esp/tools/cmake/3.24.0/bin/cmake -D IDF_PATH=/opt/esp/idf -D "SERIAL_TOOL=/opt/esp/python_env/idf5.2_py3.10_env/bin/python;;/opt/esp/idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/workspaces/build -P /opt/esp/idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p rfc2217://host.docker.internal:4000?ign_set_control -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 mqtt50.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port rfc2217://host.docker.internal:4000?ign_set_control
+Connecting...
+Device PID identification is only supported on COM and /dev/ serial ports.
+.
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: cc:50:e3:be:f1:88
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f1fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16359...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16359 compressed) at 0x00001000 in 1.2 seconds (effective 175.7 kbit/s)...
+Hash of data verified.
+Compressed 922384 bytes to 574610...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e32d... (5 %)
+Writing at 0x00027741... (8 %)
+Writing at 0x0002c59a... (11 %)
+Writing at 0x00034ac0... (13 %)
+Writing at 0x0003f989... (16 %)
+Writing at 0x000453cb... (19 %)
+Writing at 0x0004b085... (22 %)
+Writing at 0x00051053... (25 %)
+Writing at 0x00056de0... (27 %)
+Writing at 0x0005c9cb... (30 %)
+Writing at 0x00062809... (33 %)
+Writing at 0x000690a5... (36 %)
+Writing at 0x0006ec72... (38 %)
+Writing at 0x00074776... (41 %)
+Writing at 0x00079d5a... (44 %)
+Writing at 0x0007f106... (47 %)
+Writing at 0x000845fa... (50 %)
+Writing at 0x00089937... (52 %)
+Writing at 0x0008efe0... (55 %)
+Writing at 0x00094794... (58 %)
+Writing at 0x0009a646... (61 %)
+Writing at 0x000a0041... (63 %)
+Writing at 0x000a595e... (66 %)
+Writing at 0x000ab5c3... (69 %)
+Writing at 0x000b12eb... (72 %)
+Writing at 0x000b6b76... (75 %)
+Writing at 0x000bc7d7... (77 %)
+Writing at 0x000c23b0... (80 %)
+Writing at 0x000c7d64... (83 %)
+Writing at 0x000d1b11... (86 %)
+Writing at 0x000d992e... (88 %)
+Writing at 0x000df8fa... (91 %)
+Writing at 0x000e5340... (94 %)
+Writing at 0x000eb50e... (97 %)
+Writing at 0x000f0b68... (100 %)
+Wrote 922384 bytes (574610 compressed) at 0x00010000 in 27.8 seconds (effective 265.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.6 seconds (effective 38.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

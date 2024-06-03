@@ -1,0 +1,232 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time May 31 2024 03:33:17[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a5c8h (173512) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=0003a5f0 vaddr=3ffb0000 size=03ccch ( 15564) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003e2c4 vaddr=40080000 size=01d54h (  7508) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1418h (660504) map[0m
+[0;32mI (403) esp_image: segment 4: paddr=000e1440 vaddr=40081d54 size=15860h ( 88160) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (461) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu start user code[0m
+[0;32mI (470) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (470) cpu_start: Application information:[0m
+[0;32mI (473) cpu_start: Project name:     mqtt50[0m
+[0;32mI (478) cpu_start: App version:      88a6fbd-dirty[0m
+[0;32mI (484) cpu_start: Compile time:     Jun  1 2024 00:40:13[0m
+[0;32mI (490) cpu_start: ELF file SHA256:  7fa0d522b...[0m
+[0;32mI (495) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (500) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (505) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (509) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (514) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (522) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (534) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (546) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (554) spi_flash: detected chip: generic[0m
+[0;32mI (557) spi_flash: flash io: dio[0m
+[0;33mW (561) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (575) main_task: Started on CPU0[0m
+[0;32mI (585) main_task: Calling app_main()[0m
+[0;32mI (585) UART TEST: [APP] Startup..[0m
+[0;32mI (585) UART TEST: [APP] Free memory: 271120 bytes[0m
+[0;32mI (585) UART TEST: [APP] IDF version: v5.2.1[0m
+[0;32mI (615) example_connect: Start example_connect.[0m
+I (625) wifi:wifi driver task: 3ffc1998, prio:23, stack:6656, core=0
+I (625) wifi:wifi firmware version: a9f5b59
+I (625) wifi:wifi certification version: v7.0
+I (625) wifi:config NVS flash: enabled
+I (625) wifi:config nano formating: disabled
+I (635) wifi:Init data frame dynamic rx buffer num: 32
+I (635) wifi:Init static rx mgmt buffer num: 5
+I (635) wifi:Init management short buffer num: 32
+I (645) wifi:Init dynamic tx buffer num: 32
+I (645) wifi:Init static rx buffer size: 1600
+I (655) wifi:Init static rx buffer num: 10
+I (655) wifi:Init dynamic rx buffer num: 32
+[0;32mI (665) wifi_init: rx ba win: 6[0m
+[0;32mI (665) wifi_init: tcpip mbox: 32[0m
+[0;32mI (665) wifi_init: udp mbox: 6[0m
+[0;32mI (675) wifi_init: tcp mbox: 6[0m
+[0;32mI (675) wifi_init: tcp tx win: 5760[0m
+[0;32mI (675) wifi_init: tcp rx win: 5760[0m
+[0;32mI (685) wifi_init: tcp mss: 1440[0m
+[0;32mI (685) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (695) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (695) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (775) wifi:mode : sta (cc:50:e3:be:f1:88)
+I (785) wifi:enable tsf
+[0;32mI (785) example_connect: Connecting to Rogério’s iPhone...[0m
+[0;32mI (785) example_connect: Waiting for IP(s)[0m
+I (3205) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3455) wifi:state: init -> auth (b0)
+I (3465) wifi:state: auth -> assoc (0)
+I (3475) wifi:state: assoc -> run (10)
+I (13475) wifi:state: run -> init (cc00)
+I (13485) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (13485) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (15905) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+I (18315) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (18315) wifi:state: init -> auth (b0)
+I (18325) wifi:state: auth -> assoc (0)
+I (18335) wifi:state: assoc -> run (10)
+I (18435) wifi:connected with Rogério’s iPhone, aid = 1, channel 6, BW20, bssid = d2:eb:fc:be:22:0f
+I (18435) wifi:security: WPA2-PSK, phy: bgn, rssi: -53
+I (18445) wifi:pm start, type: 1
+
+I (18445) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (18485) wifi:<ba-add>idx:0 (ifx:0, d2:eb:fc:be:22:0f), tid:0, ssn:2, winSize:64
+I (18585) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (19455) esp_netif_handlers: example_netif_sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (19455) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 172.20.10.7[0m
+[0;32mI (19615) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:ce50:e3ff:febe:f188, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (19615) example_common: Connected to example_netif_sta[0m
+[0;32mI (19625) example_common: - IPv4 address: 172.20.10.7,[0m
+[0;32mI (19625) example_common: - IPv6 address: fe80:0000:0000:0000:ce50:e3ff:febe:f188, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (19645) UART TEST: Other event id:7[0m
+[0;32mI (19645) main_task: Returned from app_main()[0m
+[0;31mE (29695) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (29695) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (29695) mqtt_client: Error transport connect[0m
+[0;32mI (29695) UART TEST: MQTT_EVENT_ERROR[0m
+[0;32mI (29705) UART TEST: MQTT5 return code is 0[0m
+[0;31mE (29705) UART TEST: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (29715) UART TEST: Last errno string (Success)[0m
+[0;32mI (29715) UART TEST: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (51885) UART TEST: Recv str: �
+[0;32mI (51905) UART TEST: Recv str: [0m
+[0;32mI (51935) UART TEST: Recv str: [0m
+[0;32mI (51965) UART TEST: Recv str: [0m
+[0;32mI (52005) UART TEST: Recv str: [0m
+[0;32mI (52025) UART TEST: Recv str: [0m
+[0;32mI (52265) UART TEST: Recv str: [0m
+[0;32mI (52285) UART TEST: Recv str: [0m
+[0;32mI (52315) UART TEST: Recv str: [0m
+[0;32mI (52335) UART TEST: Recv str: [0m
+[0;32mI (52365) UART TEST: Recv str: [0m
+[0;32mI (52385) UART TEST: Recv str: [0m
+[0;32mI (52415) UART TEST: Recv str: [0m
+[0;32mI (52435) UART TEST: Recv str: [0m
+[0;32mI (52465) UART TEST: Recv str: [0m
+[0;32mI (52485) UART TEST: Recv str: [0m
+[0;32mI (52515) UART TEST: Recv str: [0m
+[0;32mI (52535) UART TEST: Recv str: [0m
+[0;32mI (52565) UART TEST: Recv str: [0m
+[0;32mI (52585) UART TEST: Recv str: [0m
+[0;32mI (52615) UART TEST: Recv str: [0m
+[0;32mI (52635) UART TEST: Recv str: [0m
+[0;32mI (52665) UART TEST: Recv str: [0m
+[0;32mI (52685) UART TEST: Recv str: [0m
+[0;32mI (52715) UART TEST: Recv str: [0m
+[0;32mI (52735) UART TEST: Recv str: [0m
+[0;32mI (52765) UART TEST: Recv str: [0m
+[0;32mI (52785) UART TEST: Recv str: [0m
+[0;32mI (52805) UART TEST: Recv str: [0m
+[0;32mI (56365) UART TEST: Recv str: �
+[0;32mI (56415) UART TEST: Recv str: [0m
+[0;32mI (56525) UART TEST: Recv str: ���[0m
+[0;32mI (56555) UART TEST: Recv str: [0m
+[0;32mI (56585) UART TEST: Recv str: C[0m
+[0;32mI (56615) UART TEST: Recv str: [0m
+[0;32mI (56645) UART TEST: Recv str: �
+[0;32mI (56685) UART TEST: Recv str: [0m
+[0;32mI (56715) UART TEST: Recv str: ��[0m
+[0;32mI (56765) UART TEST: Recv str: ��[0m
+[0;32mI (56805) UART TEST: Recv str: ��[0m
+[0;32mI (56875) UART TEST: Recv str: [0m
+[0;32mI (56915) UART TEST: Recv str: [0m
+[0;32mI (56935) UART TEST: Recv str: [0m
+[0;32mI (56965) UART TEST: Recv str: [0m
+[0;32mI (56995) UART TEST: Recv str: [0m
+[0;32mI (57035) UART TEST: Recv str: �����[0m
+[0;32mI (57165) UART TEST: Recv str: �b[0m
+[0;32mI (57205) UART TEST: Recv str: �WuU��[0m
+[0;32mI (57265) UART TEST: Recv str: �Uu[0m
+[0;32mI (57335) UART TEST: Recv str: ;T�[0m
+[0;32mI (57425) UART TEST: Recv str: F [0m
+[0;32mI (57465) UART TEST: Recv str: [0m
+[0;32mI (57485) UART TEST: Recv str: [0m
+[0;32mI (57505) UART TEST: Recv str: [0m
+[0;32mI (57685) UART TEST: Recv str: [0m
+[0;32mI (57755) UART TEST: Recv str: [0m
+[0;32mI (57805) UART TEST: Recv str: ��K/i��[0m
+[0;32mI (57855) UART TEST: Recv str: B�-[0m
+[0;32mI (57925) UART TEST: Recv str: B[0m
+[0;32mI (57965) UART TEST: Recv str: ]տ�U�e[0m
+[0;32mI (58045) UART TEST: Recv str: �+[0m
+[0;32mI (58145) UART TEST: Recv str: ������������UUUUUU�*(@[0m
+[0;32mI (58215) UART TEST: Recv str: �����UUU��U[0m
+[0;32mI (58315) UART TEST: Recv str: [0m
+[0;32mI (58415) UART TEST: Recv str: u�Wݯj!	[0m
+[0;32mI (58465) UART TEST: Recv str: ��[0m
+[0;32mI (58495) UART TEST: Recv str: ���+��@[0m
+[0;32mI (58515) UART TEST: Recv str: ���J[0m
+[0;32mI (58585) UART TEST: Recv str: ����*��[0m
+[0;32mI (58645) UART TEST: Recv str: [0m
+[0;32mI (58715) UART TEST: Recv str: ��Z�mi[0m
+[0;32mI (58765) UART TEST: Recv str: �`�b�(<��Ph�
+[0;32mI (58835) UART TEST: Recv str: [0m
+[0;32mI (58885) UART TEST: Recv str: �	[0m
+[0;32mI (58955) UART TEST: Recv str: [0m
+[0;32mI (58995) UART TEST: Recv str: ��U[0m
+[0;32mI (59015) UART TEST: Recv str: �?�UE	[0m
+[0;32mI (59045) UART TEST: Recv str: ����[0m
+[0;32mI (59075) UART TEST: Recv str: [0m
+[0;32mI (59105) UART TEST: Recv str: 	[0m
+[0;32mI (59125) UART TEST: Recv str: [0m
+[0;32mI (59155) UART TEST: Recv str: ���[0m
+[0;32mI (59215) UART TEST: Recv str: �
+[0;32mI (59265) UART TEST: Recv str: [0m
+[0;32mI (59325) UART TEST: Recv str: [0m
+[0;32mI (59375) UART TEST: Recv str: [0m
+[0;32mI (59425) UART TEST: Recv str: [0m
+[0;32mI (59475) UART TEST: Recv str: [0m
+[0;32mI (59525) UART TEST: Recv str: [0m
+[0;32mI (59575) UART TEST: Recv str: [0m
+[0;32mI (59625) UART TEST: Recv str: [0m
+[0;32mI (59675) UART TEST: Recv str: [0m
+[0;32mI (59725) UART TEST: Recv str: [0m
+[0;32mI (59775) UART TEST: Recv str: [0m
+[0;32mI (59825) UART TEST: Recv str: [0m
+[0;32mI (59865) UART TEST: Recv str: [0m
+[0;32mI (59905) UART TEST: Recv str: [0m
+[0;32mI (59945) UART TEST: Recv str: [0m
+[0;32mI (59985) UART TEST: Recv str: [0m
+[0;32mI (60025) UART TEST: Recv str: [0m
+[0;32mI (60065) UART TEST: Recv str: [0m
+[0;32mI (60105) UART TEST: Recv str: [0m
+[0;32mI (60145) UART TEST: Recv str: [0m
+[0;32mI (60185) UART TEST: Recv str: [0m
+[0;32mI (60225) UART TEST: Recv str: [0m
+[0;32mI (60265) UART TEST: Recv str: [0m
+[0;32mI (60305) UART TEST: Recv str: [0m
+[0;32mI (60345) UART TEST: Recv str: [0m
+[0;32mI (60385) UART TEST: Recv str: [0m
+[0;32mI (60425) UART TEST: Recv str: [0m
+[0;32mI (60465) UART TEST: Recv str: [0m

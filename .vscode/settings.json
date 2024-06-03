@@ -7,6 +7,10 @@
     "*.tsx": "typescriptreact",
     ".env.*": "dotenv",
     ".prettierrc": "json",
-    "mqtt_client.h": "c"
+    "mqtt_client.h": "c",
+    "*.inc": "cpp",
+    "array": "c",
+    "string": "c",
+    "string_view": "c"
   }
 }

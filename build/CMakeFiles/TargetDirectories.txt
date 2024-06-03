@@ -11,7 +11,7 @@
 /workspaces/build/CMakeFiles/flash.dir
 /workspaces/build/CMakeFiles/encrypted-flash.dir
 /workspaces/build/CMakeFiles/_project_elf_src.dir
-/workspaces/build/CMakeFiles/mqtt5.elf.dir
+/workspaces/build/CMakeFiles/mqtt50.elf.dir
 /workspaces/build/CMakeFiles/size.dir
 /workspaces/build/CMakeFiles/size-files.dir
 /workspaces/build/CMakeFiles/size-components.dir
